@@ -3,5 +3,6 @@ describe('Basic Test', function() {
         browser.ignoreSynchronization=true;
         browser.get('http://www.google.com');
         expect(browser.getTitle()).toBe('Google');
+        browser.ignoreSynchronization=false;
     });
 });
